@@ -11,17 +11,18 @@ namespace learn_asp_dot_net_bytepp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Write("Salam");
 
+            Response.Write("<br/>");
+
+            Response.Write("World");
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Label1.Text = Convert.ToString(DateTime.Now);
-        }
+            //Response.Write(Request.QueryString);
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Label1.Text = "Salam";
+            Response.Write(Server.MapPath("Default.aspx"));
         }
     }
 }
