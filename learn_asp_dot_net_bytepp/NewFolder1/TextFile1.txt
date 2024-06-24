@@ -1,4 +1,0 @@
-﻿<ul>
-	<li>name - Vasya</li>
-	<li>sex - true</li>
-</ul>

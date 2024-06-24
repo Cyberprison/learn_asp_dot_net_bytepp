@@ -10,7 +10,7 @@
 namespace learn_asp_dot_net_bytepp {
     
     
-    public partial class WebForm1 {
+    public partial class Product {
         
         /// <summary>
         /// form1 элемент управления.
@@ -22,12 +22,12 @@ namespace learn_asp_dot_net_bytepp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Button1 элемент управления.
+        /// Label1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }

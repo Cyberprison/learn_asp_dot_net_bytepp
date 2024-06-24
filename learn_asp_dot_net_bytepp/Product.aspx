@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="learn_asp_dot_net_bytepp.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="learn_asp_dot_net_bytepp.Product" %>
 
 <!DOCTYPE html>
 
@@ -10,9 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <p>WebForm1</p>
+            <!--
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            -->
 
-            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+
         </div>
     </form>
 </body>
