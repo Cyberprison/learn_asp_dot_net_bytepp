@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="learn_asp_dot_net_bytepp.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="learn_asp_dot_net_mvc_bytepp.Default" %>
 
 <!DOCTYPE html>
 
@@ -8,9 +8,8 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server" action="Main.aspx" method="post">
+    <form id="form1" runat="server">
         <div>
-
         </div>
     </form>
 </body>
