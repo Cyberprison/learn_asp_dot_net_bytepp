@@ -13,24 +13,5 @@ namespace learn_asp_dot_net_bytepp
         {
 
         }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            int counter = 0;
-
-            object obj = ViewState["counter"];
-
-            if(obj != null)
-            {
-                counter = Convert.ToInt32(obj);
-            }
-
-            counter++;
-
-            ViewState["counter"] = counter;
-
-            Label1.Text = Convert.ToString(counter);
-
-        }
     }
 }

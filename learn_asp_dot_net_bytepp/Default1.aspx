@@ -10,12 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            <br />
-            <asp:Button ID="Button1" runat="server" Text="+1" OnClick="Button1_Click" />
-            <br />
-            <asp:Button ID="Button2" runat="server" Text="+2" />
-
+            <ul type="disk">
+                <li><a href="Default2.aspx?id=1">id = 1</a></li>
+                <li><a href="Default2.aspx?id=2">id = 2</a></li>
+            </ul>
         </div>
     </form>
 </body>

@@ -11,29 +11,20 @@ namespace learn_asp_dot_net_bytepp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Dictionary<int, string> dictionary = new Dictionary<int, string>();
 
-        }
+            dictionary.Add(1, "1");
+            dictionary.Add(2, "2");
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Person person = new Person(TextBox1.Text, Convert.ToInt32(TextBox2.Text));
+            string temp = Request.QueryString["id"];
 
-            ViewState["person"] = person;
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Person person = ViewState["person"] as Person;
-
-            if (person != null)
+            if(!string.IsNullOrEmpty(temp))
             {
-                Label1.Text = person.Name;
-                Label2.Text = Convert.ToString(person.Age);
+                Label1.Text = dictionary[Convert.ToInt32(temp)];
             }
             else
             {
-                Label1.Text = "null";
-                Label2.Text = "null";
+                Label1.Text = "parametr id is empty";
             }
         }
     }
