@@ -10,10 +10,17 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <ul type="disk">
-                <li><a href="Default2.aspx?id=1">id = 1</a></li>
-                <li><a href="Default2.aspx?id=2">id = 2</a></li>
-            </ul>
+
+
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Button" />
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Default2.aspx" runat="server">HyperLink</asp:HyperLink>
+
+
         </div>
     </form>
 </body>

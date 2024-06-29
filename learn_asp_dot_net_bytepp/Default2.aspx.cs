@@ -11,20 +11,11 @@ namespace learn_asp_dot_net_bytepp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Dictionary<int, string> dictionary = new Dictionary<int, string>();
+            HttpCookie httpCookie = Request.Cookies["textBox1"];
 
-            dictionary.Add(1, "1");
-            dictionary.Add(2, "2");
-
-            string temp = Request.QueryString["id"];
-
-            if(!string.IsNullOrEmpty(temp))
+            if (httpCookie != null)
             {
-                Label1.Text = dictionary[Convert.ToInt32(temp)];
-            }
-            else
-            {
-                Label1.Text = "parametr id is empty";
+                Label1.Text = httpCookie.Value;
             }
         }
     }
