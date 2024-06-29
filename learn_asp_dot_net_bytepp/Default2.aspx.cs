@@ -18,5 +18,16 @@ namespace learn_asp_dot_net_bytepp
                 Label1.Text = httpCookie.Value;
             }
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            HttpCookie httpCookie = new HttpCookie("textBox1", string.Empty);
+
+            httpCookie.Expires = DateTime.Now.AddDays(-1);
+
+            Response.Cookies.Add(httpCookie);
+
+            Response.Redirect(Request.Url.PathAndQuery);
+        }
     }
 }
