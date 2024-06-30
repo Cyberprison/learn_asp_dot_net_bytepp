@@ -10,14 +10,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            <br />
-            <asp:Button ID="Button1" runat="server" Text="+2" OnClick="Button1_Click"/>
-            <br />
-            <br />
-            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-            <br />
-            <asp:Button ID="Button2" runat="server" Text="+10" OnClick="Button2_Click" />
+
+            <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+
         </div>
     </form>
 </body>
