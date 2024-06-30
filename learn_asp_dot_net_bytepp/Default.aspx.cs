@@ -11,12 +11,7 @@ namespace learn_asp_dot_net_bytepp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            TextBox TextBox1 = new TextBox()
-            {
-                Text = "Hello"
-            };
 
-            PlaceHolder1.Controls.Add(TextBox1);
         }
     }
 }
